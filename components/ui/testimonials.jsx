@@ -3,10 +3,10 @@
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
-export default function InfiniteMovingCardsDemo() {
+export default function Testimonials() {
   return (
     <div
-      className=" rounded-md flex flex-col antialiased bg-background  items-center justify-center relative overflow-hidden">
+      className="mt-8 rounded-md flex flex-col antialiased bg-background text-start  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
   );
