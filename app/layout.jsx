@@ -2,9 +2,6 @@ import { Poppins } from "next/font/google";
 
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/ui/scrollsmoothcontainer";
-import { MainNavbar } from "@/components/ui/reusablenavbar";
-
-
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,7 +21,6 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${poppins.variable} antialiased`}
       >
         <SmoothScrollProvider>
-          <MainNavbar/>
         {children}
      </SmoothScrollProvider>
       </body>
